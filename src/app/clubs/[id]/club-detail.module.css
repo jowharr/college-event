@@ -1,0 +1,178 @@
+.page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1;
+    width: 100%;
+}
+
+.hero {
+    position: relative;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.heroOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(26, 43, 74, 0.85);
+}
+
+.heroContent {
+    position: relative;
+    z-index: 2;
+    color: white;
+    padding: 0 1rem;
+}
+
+.clubIcon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+    background: white;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border-radius: 50%;
+    color: #333;
+}
+
+.clubName {
+    font-family: var(--font-cinzel), serif;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.clubTagline {
+    font-size: 1.25rem;
+    color: var(--accent-orange);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1rem 3rem;
+}
+
+.section {
+    margin-bottom: 4rem;
+}
+
+.sectionTitle {
+    font-family: var(--font-cinzel), serif;
+    font-size: 2rem;
+    color: #1a2b4a;
+    /* Deep Navy */
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid var(--accent-orange);
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+.description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #334155;
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.activitiesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.activityCard {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s;
+}
+
+.activityCard:hover {
+    transform: translateY(-5px);
+}
+
+.activityImage {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.activityContent {
+    padding: 1.5rem;
+}
+
+.activityDate {
+    font-size: 0.8rem;
+    color: var(--accent-orange);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    display: block;
+    text-transform: uppercase;
+}
+
+.activityTitle {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #1a2b4a;
+    margin-bottom: 0.5rem;
+}
+
+.activityDesc {
+    font-size: 0.9rem;
+    color: #64748b;
+    line-height: 1.5;
+}
+
+.joinSection {
+    background: #1a2b4a;
+    padding: 3rem;
+    text-align: center;
+    border-radius: 20px;
+    color: white;
+}
+
+.joinText {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.joinBtn {
+    background-color: var(--accent-orange);
+    color: white;
+    border: none;
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.2s;
+}
+
+.joinBtn:hover {
+    background-color: #d66a2e;
+    transform: scale(1.05);
+}
